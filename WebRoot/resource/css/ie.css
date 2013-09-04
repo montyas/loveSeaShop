@@ -1,0 +1,27 @@
+#sidebar UL#nav LI A STRONG {
+	POSITION: relative; MARGIN: 0px; RIGHT: -1px
+}
+#header FORM {
+	MARGIN-LEFT: 10px
+}
+#header FORM .quickresults {
+	LEFT: 20px
+}
+#content .tableactions INPUT.submit {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+#content FORM INPUT.submit {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+#content FORM .custom_file INPUT.button {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+#content .small.progress_bar {
+	PADDING-RIGHT: 2px
+}
+#content FORM .custom_file INPUT.button {
+	VERTICAL-ALIGN: middle
+}
+#content .chat_messages UL LI {
+	LINE-HEIGHT: normal
+}

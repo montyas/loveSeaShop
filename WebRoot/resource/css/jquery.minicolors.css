@@ -1,0 +1,21 @@
+.miniColors-trigger {
+	MARGIN: 0px 0.25em; OUTLINE-STYLE: none; WIDTH: 22px; DISPLAY: inline-block; BACKGROUND: url(../images/trigger.png) no-repeat center 50%; HEIGHT: 22px; VERTICAL-ALIGN: middle
+}
+.miniColors-selector {
+	Z-INDEX: 999999; BORDER-BOTTOM: #000 1px solid; POSITION: absolute; BORDER-LEFT: #000 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; WIDTH: 175px; PADDING-RIGHT: 5px; BACKGROUND: url(../images/tt.png) 0px 0px; HEIGHT: 150px; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 5px; border-radius: 4px; -moz-border-radius: px; -webkit-border-radius: 4px; box-shadow: inset 0 1px 0 #666; -moz-box-shadow: inset 0 1px 0 #666; -webkit-box-shadow: inset 0 1px 0 #666
+}
+.black.miniColors-selector {
+	BORDER-BOTTOM-COLOR: #000; BORDER-TOP-COLOR: #000; BACKGROUND: #000; BORDER-RIGHT-COLOR: #000; BORDER-LEFT-COLOR: #000
+}
+.miniColors-colors {
+	POSITION: absolute; WIDTH: 150px; BACKGROUND: url(../images/gradient.png) no-repeat center 50%; HEIGHT: 150px; TOP: 5px; CURSOR: crosshair; LEFT: 5px
+}
+.miniColors-hues {
+	POSITION: absolute; WIDTH: 20px; BACKGROUND: url(../images/rainbow.png) no-repeat center 50%; HEIGHT: 150px; TOP: 5px; CURSOR: crosshair; LEFT: 160px
+}
+.miniColors-colorPicker {
+	POSITION: absolute; WIDTH: 11px; BACKGROUND: url(../images/circle.gif) no-repeat center 50%; HEIGHT: 11px
+}
+.miniColors-huePicker {
+	POSITION: absolute; WIDTH: 26px; BACKGROUND: url(../images/line.gif) no-repeat center 50%; HEIGHT: 3px; LEFT: -3px
+}

@@ -1,0 +1,48 @@
+.tipsy {
+	Z-INDEX: 100000; POSITION: absolute; PADDING-BOTTOM: 5px; LINE-HEIGHT: 18px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.tipsy-inner {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #000; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; MAX-WIDTH: 200px; COLOR: #fff; PADDING-TOP: 4px
+}
+.tipsy-inner {
+	BORDER-BOTTOM: #000 1px; BORDER-LEFT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; box-shadow: inset 0 1px 0 #333; -moz-box-shadow: inset 0 1px 0 #333; -webkit-box-shadow: inset 0 1px 0 #333
+}
+.tipsy-arrow {
+	BORDER-BOTTOM: #000 5px dashed; POSITION: absolute; BORDER-LEFT: #000 5px dashed; LINE-HEIGHT: 0; WIDTH: 0px; HEIGHT: 0px; BORDER-TOP: #000 5px dashed; BORDER-RIGHT: #000 5px dashed
+}
+.tipsy-arrow-n {
+	BORDER-BOTTOM-COLOR: #000
+}
+.tipsy-arrow-s {
+	BORDER-TOP-COLOR: #000
+}
+.tipsy-arrow-e {
+	BORDER-LEFT-COLOR: #000
+}
+.tipsy-arrow-w {
+	BORDER-RIGHT-COLOR: #000
+}
+.tipsy-n .tipsy-arrow {
+	BORDER-BOTTOM-STYLE: solid; BORDER-TOP-STYLE: none; BORDER-RIGHT-COLOR: transparent; MARGIN-LEFT: -5px; BORDER-LEFT-COLOR: transparent; TOP: 0px; LEFT: 50%
+}
+.tipsy-nw .tipsy-arrow {
+	BORDER-BOTTOM-STYLE: solid; BORDER-TOP-STYLE: none; BORDER-RIGHT-COLOR: transparent; BORDER-LEFT-COLOR: transparent; TOP: 0px; LEFT: 10px
+}
+.tipsy-ne .tipsy-arrow {
+	BORDER-BOTTOM-STYLE: solid; BORDER-TOP-STYLE: none; BORDER-RIGHT-COLOR: transparent; BORDER-LEFT-COLOR: transparent; TOP: 0px; RIGHT: 10px
+}
+.tipsy-s .tipsy-arrow {
+	BORDER-BOTTOM-STYLE: none; BOTTOM: 0px; BORDER-TOP-STYLE: solid; BORDER-RIGHT-COLOR: transparent; MARGIN-LEFT: -5px; BORDER-LEFT-COLOR: transparent; LEFT: 50%
+}
+.tipsy-sw .tipsy-arrow {
+	BORDER-BOTTOM-STYLE: none; BOTTOM: 0px; BORDER-TOP-STYLE: solid; BORDER-RIGHT-COLOR: transparent; BORDER-LEFT-COLOR: transparent; LEFT: 10px
+}
+.tipsy-se .tipsy-arrow {
+	BORDER-BOTTOM-STYLE: none; BOTTOM: 0px; BORDER-TOP-STYLE: solid; BORDER-RIGHT-COLOR: transparent; BORDER-LEFT-COLOR: transparent; RIGHT: 10px
+}
+.tipsy-e .tipsy-arrow {
+	BORDER-BOTTOM-COLOR: transparent; BORDER-RIGHT-STYLE: none; MARGIN-TOP: -5px; BORDER-TOP-COLOR: transparent; BORDER-LEFT-STYLE: solid; TOP: 50%; RIGHT: 0px
+}
+.tipsy-w .tipsy-arrow {
+	BORDER-BOTTOM-COLOR: transparent; BORDER-RIGHT-STYLE: solid; MARGIN-TOP: -5px; BORDER-TOP-COLOR: transparent; BORDER-LEFT-STYLE: none; TOP: 50%; LEFT: 0px
+}

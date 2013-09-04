@@ -1,0 +1,96 @@
+.visualize {
+	Z-INDEX: 1; BORDER-BOTTOM: #bbb 1px solid; POSITION: relative; BORDER-LEFT: #bbb 1px solid; MARGIN: 10px auto 40px; BACKGROUND: #fefefe; BORDER-TOP: #bbb 1px solid; BORDER-RIGHT: #bbb 1px solid
+}
+.visualize canvas {
+	POSITION: absolute
+}
+.visualize UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px
+}
+.visualize UL LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px
+}
+.visualize-bar {
+	BORDER-TOP-WIDTH: 0px
+}
+.visualize .visualize-info {
+	BORDER-BOTTOM: #aaa 1px solid; POSITION: absolute; BORDER-LEFT: #aaa 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 13px; PADDING-RIGHT: 3px; BACKGROUND: #fafafa; FONT-SIZE: 11px; BORDER-TOP: #aaa 1px solid; TOP: -15px; RIGHT: 10px; BORDER-RIGHT: #aaa 1px solid; PADDING-TOP: 0px
+}
+.visualize .visualize-title {
+	DISPLAY: block; MARGIN-BOTTOM: 3px; COLOR: #333
+}
+.visualize UL.visualize-key {
+	LIST-STYLE-TYPE: none
+}
+.visualize UL.visualize-key LI {
+	POSITION: relative; LIST-STYLE-TYPE: none; PADDING-LEFT: 10px; FLOAT: left; MARGIN-RIGHT: 10px
+}
+.visualize UL.visualize-key .visualize-key-color {
+	POSITION: absolute; MARGIN-TOP: -3px; WIDTH: 6px; HEIGHT: 6px; FONT-SIZE: 6px; TOP: 50%; LEFT: 0px
+}
+.visualize UL.visualize-key .visualize-key-label {
+	COLOR: #333
+}
+.visualize-pie .visualize-labels {
+	LIST-STYLE-TYPE: none
+}
+.visualize-pie .visualize-label-pos {
+	POSITION: absolute; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.visualize-pie .visualize-label {
+	POSITION: absolute; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.visualize-pie .visualize-label {
+	DISPLAY: block; COLOR: #fff; FONT-SIZE: 1em; FONT-WEIGHT: bold
+}
+.visualize-pie-outside .visualize-label {
+	COLOR: #000; FONT-WEIGHT: normal
+}
+.visualize-labels-x {
+	POSITION: absolute; LIST-STYLE-TYPE: none; TOP: 0px; LEFT: 0px
+}
+.visualize-labels-y {
+	POSITION: absolute; LIST-STYLE-TYPE: none; TOP: 0px; LEFT: 0px
+}
+.visualize-labels-x LI {
+	POSITION: absolute; BOTTOM: 0px
+}
+.visualize-labels-y LI {
+	POSITION: absolute; BOTTOM: 0px
+}
+.visualize-labels-x LI SPAN.label {
+	POSITION: absolute; COLOR: #777
+}
+.visualize-labels-y LI SPAN.label {
+	POSITION: absolute; COLOR: #777
+}
+.visualize-labels-x LI SPAN.line {
+	BORDER-BOTTOM: #ddd 0px solid; POSITION: absolute; BORDER-LEFT: #ddd 0px solid; BORDER-TOP: #ddd 0px solid; BORDER-RIGHT: #ddd 0px solid
+}
+.visualize-labels-y LI SPAN.line {
+	BORDER-BOTTOM: #ddd 0px solid; POSITION: absolute; BORDER-LEFT: #ddd 0px solid; BORDER-TOP: #ddd 0px solid; BORDER-RIGHT: #ddd 0px solid
+}
+.visualize-labels-x LI {
+	HEIGHT: 100%; FONT-SIZE: 10px
+}
+.visualize-labels-x LI SPAN.label {
+	MARGIN-TOP: 5px; TOP: 100%
+}
+.visualize-labels-x LI SPAN.line {
+	DISPLAY: block; HEIGHT: 100%; BORDER-LEFT-WIDTH: 1px
+}
+.visualize-labels-y LI {
+	LINE-HEIGHT: normal; WIDTH: 100%; FONT-SIZE: 10px
+}
+.visualize-labels-y LI SPAN.label {
+	TEXT-ALIGN: right; WIDTH: 100px; DISPLAY: block; RIGHT: 100%; MARGIN-RIGHT: 5px
+}
+.visualize-labels-y LI SPAN.line {
+	WIDTH: 100%; BORDER-TOP-WIDTH: 1px
+}
+.visualize-bar .visualize-labels-x LI SPAN.label {
+	TEXT-ALIGN: center; WIDTH: 100%
+}
+.visualize .chart_tooltip {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; PADDING-BOTTOM: 6px; LINE-HEIGHT: normal; MARGIN: 3px 4px 0px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; BACKGROUND: url(../images/tt.png) 0px 0px; COLOR: #fff; FONT-SIZE: 11px; BORDER-TOP: #000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 6px; text-shadow: 0 1px 0 #000; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; box-shadow: inset 0 1px 0 #555; -moz-box-shadow: inset 0 1px 0 #555; -webkit-box-shadow: inset 0 1px 0 #555
+}
