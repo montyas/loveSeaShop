@@ -8,7 +8,7 @@ package com.lovesea.message.bean.req;
  *    
  * 项目名称：calendarPush   
  * 类名称：ReqBaseMsg   
- * 类描述：   
+ * 类描述：请求公共属性   
  * 创建人：wangxun   
  * 创建时间：2013-7-30 下午05:35:55   
  * 修改人：wangxun   
