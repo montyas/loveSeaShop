@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="shop" >
+	<typeAlias alias="ShopInfo" type="com.lovesea.shop.bean.ShopInfo" />
+	<insert id="addShopInfo" parameterClass="ShopInfo">
+		INSERT INTO ls_shop_info (num_iid,title,detail_url,pic_url,price,num,update_time,create_time) 
+		values(#num_iid#,#title#,#detail_url#,#pic_url#,#price#,#num#,now(),now())
+		ON DUPLICATE KEY UPDATE title=#title#,detail_url=#detail_url#,pic_url=#pic_url#,num=#num#,price=#price#,update_time=now()
+	</insert>
+	<select id="queryShopClassification" parameterClass="int" resultClass="ShopInfo">
+		SELECT shop.* FROM ls_shop_info shop LEFT JOIN ls_shop_type_info info ON shop.`id`=info.`shop_id` WHERE info.`type_id`=#typeId#;
+	</select>
+</sqlMap>
