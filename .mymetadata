@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="loveSeaShop"
+  id="myeclipse.1376026454861"
+  context-root="/ls"
+  j2ee-spec="5.0"
+  archive="loveSeaShop.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
