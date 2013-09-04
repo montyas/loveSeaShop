@@ -1,5 +1,5 @@
 package com.lovesea.common.utils;
-import java.security.*;
+import java.security.MessageDigest;
 import java.util.Arrays;
 
 /***
@@ -100,7 +100,7 @@ public final class MicroMessageDigest {
 	}
 	
 	private String getToken(){
-		return MicroMessageUtil.TOKEN;
+		return Constant.TOKEN;
 	}
 
 	public static void main(String[] args) {

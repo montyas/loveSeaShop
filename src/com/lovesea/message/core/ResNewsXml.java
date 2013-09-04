@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.dom4j.Element;
 
-import com.lovesea.common.utils.MicroMessageUtil;
+import com.lovesea.common.utils.Constant;
 import com.lovesea.message.bean.res.NewsArticlesMsg;
 import com.lovesea.message.bean.res.ResNewsMsg;
 
@@ -39,7 +39,7 @@ public class ResNewsXml extends ResXML {
 		Element root = getCommElement();
 		
 		Element msgType = root.addElement("MsgType");
-		msgType.addCDATA(MicroMessageUtil.RESP_MESSAGE_TYPE_NEWS);
+		msgType.addCDATA(Constant.RESP_MESSAGE_TYPE_NEWS);
 		
 		Element articleCount = root.addElement("ArticleCount");
 		articleCount.addText(String.valueOf(articlesList.size()));

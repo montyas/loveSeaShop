@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 
+import com.lovesea.common.utils.Constant;
 import com.lovesea.common.utils.MicroMessageUtil;
 import com.lovesea.message.bean.req.ReqTextMsg;
 import com.lovesea.message.bean.res.ResTextMsg;
@@ -47,7 +48,7 @@ public class ResCore {
 		ResTextMsg text = new ResTextMsg();
 		
 		//文本请求
-		if(msgType.equals(MicroMessageUtil.REQ_MESSAGE_TYPE_TEXT)){
+		if(msgType.equals(Constant.REQ_MESSAGE_TYPE_TEXT)){
 			reqTextMsg.setFromUserName(fromUserName);
 			reqTextMsg.setToUserName(toUserName);
 			String content = requestMap.get("Content");
@@ -59,24 +60,24 @@ public class ResCore {
 			else{
 				text.setFromUserName(toUserName);
 				text.setToUserName(fromUserName);
-				text.setContent(MicroMessageUtil.REP_TYPE_UNKOWN+getMenus().toString());
+				text.setContent(Constant.REP_TYPE_UNKOWN+getMenus().toString());
 				res = new ResTextXML(text);
 			}
 		}
 		
 		//事件请求
-		else if(msgType.indexOf(MicroMessageUtil.REQ_MESSAGE_TYPE_EVENT)!=-1){
+		else if(msgType.indexOf(Constant.REQ_MESSAGE_TYPE_EVENT)!=-1){
 			text.setFromUserName(toUserName);
 			text.setToUserName(fromUserName);
 			 
 			 String eventType = requestMap.get("Event");
 			 String content = null;
 			 //加关注
-			 if(eventType.equals(MicroMessageUtil.EVENT_TYPE_SUBSCRIBE)){
-				 content = MicroMessageUtil.SUBSCRIBE_REPLY+getMenus().toString();
+			 if(eventType.equals(Constant.EVENT_TYPE_SUBSCRIBE)){
+				 content = Constant.SUBSCRIBE_REPLY+getMenus().toString();
 			 }
 			 //取消关注
-			 else if(eventType.equals(MicroMessageUtil.EVENT_TYPE_UNSUBSCRIBE)){
+			 else if(eventType.equals(Constant.EVENT_TYPE_UNSUBSCRIBE)){
 				 content = "取消了关注!";
 			 }
 			 //自定义菜单,暂未开通
@@ -89,7 +90,7 @@ public class ResCore {
 		
 		//为本文，菜单指令,对方发送表情和图文一律不处理
 		else{
-			text.setContent(MicroMessageUtil.REP_TYPE_UNKOWN+getMenus().toString());
+			text.setContent(Constant.REP_TYPE_UNKOWN+getMenus().toString());
 			res = new ResTextXML(text);
 		}
 		

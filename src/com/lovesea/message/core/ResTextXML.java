@@ -5,7 +5,7 @@ package com.lovesea.message.core;
 
 import org.dom4j.Element;
 
-import com.lovesea.common.utils.MicroMessageUtil;
+import com.lovesea.common.utils.Constant;
 import com.lovesea.message.bean.res.ResTextMsg;
 
 /**   
@@ -36,8 +36,7 @@ public class ResTextXML extends ResXML {
 		Element root = getCommElement();
 		
 		Element msgType = root.addElement("MsgType");
-		msgType.addCDATA(MicroMessageUtil.REQ_MESSAGE_TYPE_TEXT);
-		
+		msgType.addCDATA(Constant.REQ_MESSAGE_TYPE_TEXT);
 		Element content = root.addElement("Content");
 		content.addCDATA(msg.getContent());
 		
