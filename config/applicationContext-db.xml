@@ -14,7 +14,7 @@
            	http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://localhost:3306/lovesea?characterEncoding=utf8"/>
+		<property name="url" value="jdbc:mysql://imogui.com:3306/dfstore?characterEncoding=utf8"/>
 		<property name="username" value="root"/>
 		<property name="password" value="7x7zimogui"/>
 		<property name="maxActive" value="100"/>
@@ -41,6 +41,7 @@
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
+	<!--  
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
 			<tx:method name="add*" propagation="REQUIRED" />
@@ -53,6 +54,6 @@
 		<aop:pointcut id="allMethod"
 			expression="execution(* com.imogui.cp.service.*.*(..))" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="allMethod" />
-	</aop:config>
+	</aop:config>-->
 
 </beans>

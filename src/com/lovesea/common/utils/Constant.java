@@ -105,10 +105,18 @@ public class Constant {
 	/**
 	 * 加关注默认回复
 	 */
-	public static final String SUBSCRIBE_REPLY = "我是购物机器人小艾!欢迎关注爱情海包包官方微信!\n回复数字选择宝贝\n\n";
+	public static final String SUBSCRIBE_REPLY = "我是购物机器人小艾!欢迎关注爱情海包包官方微信!回复数字选择宝贝\n\n";
 	
 	/**
 	 * 无法识别用户指令回复
 	 */
-	public static final String REP_TYPE_UNKOWN = "SORRY!小艾无法识别!\n亲可以回复数字选择宝贝\n\n";
+	public static final String REP_TYPE_UNKOWN = "对不起!小艾无法识别!亲可以回复数字选择宝贝\n\n";
+	
+	/**
+	 * 微信自定义菜单按钮类型
+	 */
+	public static final String CLICK_TYPE="click";
+	
+	public static final String VIEW_TYPE="view";
+	
 }

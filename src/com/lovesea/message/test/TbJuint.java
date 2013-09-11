@@ -34,9 +34,14 @@ public class TbJuint {
 	}
 	@Test
 	public void addShopInfo(){
-		long mm_uid=19127401164L;
-		ShopInfo shopInfo = TbCore.shopDeitals(mm_uid);
-		shop.addShopInfo(shopInfo);
+		String ids="19127401164,26422808588,19126505827,20137337060,20120578300,27433712675,20139441537,20139841019,20134506798,20134818715,27441764088,20135378455,27442132445";
+		//long mm_uid=19127401164L;
+		String id[] = ids.split(",");
+		for(String s:id){
+			ShopInfo shopInfo = TbCore.shopDeitals(Long.valueOf(s));
+			shop.addShopInfo(shopInfo);
+		}
+		
 	}
 	
 	@Test
