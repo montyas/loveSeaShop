@@ -17,6 +17,11 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
+import com.lovesea.message.bean.Button;
+import com.lovesea.message.bean.Menu;
+import com.lovesea.message.bean.ParentButton;
+import com.lovesea.message.bean.SubButton;
+
 /**
  * 
  * 项目名称：loveSeaShop 类名称：MicroMessageCreateMenu 类描述： 创建自定义菜单 创建人：wangxun
@@ -42,7 +47,6 @@ public class MicroMessageCreateMenu {
 	     try {
 	            URL urlGet = new URL(url);
 	            HttpURLConnection http = (HttpURLConnection) urlGet.openConnection();    
-	             
 	            http.setRequestMethod("GET");      //必须是get方式请求    
 	            http.setRequestProperty("Content-Type","application/x-www-form-urlencoded");    
 	            http.setDoOutput(true);        
@@ -70,7 +74,7 @@ public class MicroMessageCreateMenu {
 
 	public static void createMene() {
 		String menu_url = Constant.CREATE_MENU_URL + getAccess_token();
-		String menu = getMenu();
+		String menu =  getMenu();
 		URL url = null;
 		HttpURLConnection http = null;
 		try {
@@ -147,5 +151,74 @@ public class MicroMessageCreateMenu {
 	}
 	public static void main(String args[]){
 		createMene();
+		//JSONObject js =  new JSONObject(getNewMenu());
+		//System.out.println(getNewMenu());
+	}
+	
+	public static String getNewMenu(){
+		SubButton sub11=new SubButton();
+		sub11.setName("xxx");
+		sub11.setType(Constant.CLICK_TYPE);
+		sub11.setKey("LS_NEWS");
+		
+		SubButton sub12=new SubButton();
+		sub12.setName("热销推荐");
+		sub12.setType(Constant.CLICK_TYPE);
+		sub12.setKey("LS_HOT");
+		
+		SubButton sub13=new SubButton();
+		sub13.setName("猜你喜欢");
+		sub13.setType(Constant.CLICK_TYPE);
+		sub13.setKey("LS_LIKE");
+		
+		ParentButton sub1 = new ParentButton();
+		sub1.setName("包包品类");
+		sub1.setSub_button(new SubButton[]{sub11,sub12,sub13});
+		
+		SubButton sub21=new SubButton();
+		sub11.setName("手提&单肩");
+		sub11.setType(Constant.CLICK_TYPE);
+		sub11.setKey("单肩&双肩");
+		
+		SubButton sub22=new SubButton();
+		sub22.setName("单肩&双肩");
+		sub22.setType(Constant.CLICK_TYPE);
+		sub22.setKey("LS_HOT");
+		
+		SubButton sub23=new SubButton();
+		sub23.setName("多功能包包");
+		sub23.setType(Constant.CLICK_TYPE);
+		sub23.setKey("LS_LIKE");
+		
+		ParentButton sub2 = new ParentButton();
+		sub2.setName("包包类型");
+		sub2.setSub_button(new SubButton[]{sub21,sub22,sub23});
+		
+		
+		
+		SubButton sub32=new SubButton();
+		sub32.setName("店铺首页");
+		sub32.setType(Constant.VIEW_TYPE);
+		sub32.setKey("http://aiqinghai.m.tmall.com");
+		
+		SubButton sub31=new SubButton();
+		sub31.setName("售后保障");
+		sub31.setType(Constant.CLICK_TYPE);
+		sub31.setKey("LS_SELLER");
+		
+		SubButton sub33=new SubButton();
+		sub33.setName("品牌故事");
+		sub33.setType(Constant.CLICK_TYPE);
+		sub33.setKey("LS_BRAND_STORY");
+		
+		ParentButton sub3 = new ParentButton();
+		sub3.setName("关于我们");
+		sub3.setSub_button(new SubButton[]{sub31,sub32,sub33});
+		
+		 Menu menu = new Menu(); 
+		 menu.setButton(new ParentButton[]{sub1,sub2,sub3});
+		 
+		 JSONObject js =  new JSONObject(menu);
+		return js.toString();
 	}
 }
